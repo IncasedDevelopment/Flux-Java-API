@@ -8,8 +8,8 @@ public enum CustomProfileFieldType {
 
 	private static final CustomProfileFieldType[] VALUES = CustomProfileFieldType.values();
 
-	public static CustomProfileFieldType fromNamelessTypeInt(int namelessTypeInt) {
-		return VALUES[namelessTypeInt - 1];
+	public static CustomProfileFieldType fromFluxTypeInt(int FluxTypeInt) {
+		return VALUES[FluxTypeInt - 1];
 	}
 
 }

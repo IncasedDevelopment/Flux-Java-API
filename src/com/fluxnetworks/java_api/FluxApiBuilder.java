@@ -1,14 +1,13 @@
 package com.fluxnetworks.java_api;
 
+import com.fluxnetworks.java_api.logger.ApiLogger;
+import com.fluxnetworks.java_api.logger.PrintStreamLogger;
+import com.fluxnetworks.java_api.logger.Slf4jLogger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.net.URL;
 import java.util.Objects;
-
-import com.fluxnetworks.java_api.logger.ApiLogger;
-import com.fluxnetworks.java_api.logger.PrintStreamLogger;
-import com.fluxnetworks.java_api.logger.Slf4jLogger;
 
 public class FluxApiBuilder {
 

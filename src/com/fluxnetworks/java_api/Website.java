@@ -6,10 +6,9 @@ import java.util.stream.StreamSupport;
 
 import org.jetbrains.annotations.NotNull;
 
-import com.fluxnetworks.java_api.exception.UnknownFluxVersionException;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-
+import com.fluxnetworks.java_api.exception.UnknownFluxVersionException;
 import org.jetbrains.annotations.Nullable;
 
 public class Website {

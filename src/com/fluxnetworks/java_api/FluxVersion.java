@@ -1,12 +1,11 @@
 package com.fluxnetworks.java_api;
 
+import com.fluxnetworks.java_api.exception.UnknownFluxVersionException;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
-
-import com.fluxnetworks.java_api.exception.UnknownFluxVersionException;
 
 public enum FluxVersion {
 

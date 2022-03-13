@@ -1,12 +1,11 @@
 package com.fluxnetworks.java_api;
 
-import com.fluxnetworks.java_api.exception.ApiDisabledException;
-import com.fluxnetworks.java_api.logger.ApiLogger;
 import com.google.common.base.Preconditions;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
-
+import com.fluxnetworks.java_api.exception.ApiDisabledException;
+import com.fluxnetworks.java_api.logger.ApiLogger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

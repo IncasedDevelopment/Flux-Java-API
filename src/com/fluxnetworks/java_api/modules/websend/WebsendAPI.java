@@ -1,11 +1,10 @@
 package com.fluxnetworks.java_api.modules.websend;
 
-import com.fluxnetworks.java_api.FluxException;
-import com.fluxnetworks.java_api.RequestHandler;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-
+import com.fluxnetworks.java_api.FluxException;
+import com.fluxnetworks.java_api.RequestHandler;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;

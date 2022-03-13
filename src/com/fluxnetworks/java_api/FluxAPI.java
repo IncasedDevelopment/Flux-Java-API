@@ -1,13 +1,12 @@
 package com.fluxnetworks.java_api;
 
-import com.fluxnetworks.java_api.exception.*;
-import com.fluxnetworks.java_api.modules.websend.WebsendAPI;
 import com.google.common.base.Preconditions;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-
+import com.fluxnetworks.java_api.exception.*;
+import com.fluxnetworks.java_api.modules.websend.WebsendAPI;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -51,6 +50,19 @@ public final class FluxAPI {
 
 		return url.substring(url.lastIndexOf('/'));
 	}
+
+	// TODO Add back when Flux Networks has reimplemented it
+//	/**
+//	 * Get announcements visible to guests. Use {@link #getAnnouncements(FluxUser)} for non-guest announcements.
+//	 * @return list of current announcements
+//	 * @throws FluxException if there is an error in the request
+//	 */
+//	@NotNull
+//	public List<@NotNull Announcement> getAnnouncements() throws FluxException {
+//		final JsonObject response = this.requests.get();
+//
+//		return getAnnouncements(response);
+//	}
 
 	/**
 	 * Get all announcements visible for the player with the specified uuid
@@ -130,7 +142,7 @@ public final class FluxAPI {
 
 	/**
 	 * Construct a FluxUser object without making API requests (so without checking if the user exists)
-	 * @param id Flux user id
+	 * @param id Flux Networks user id
 	 * @return Flux user object, never null
 	 */
 	public @NotNull FluxUser getUserLazy(final int id) {
@@ -139,7 +151,7 @@ public final class FluxAPI {
 
 	/**
 	 * Construct a FluxUser object without making API requests (so without checking if the user exists)
-	 * @param username Flux user
+	 * @param username Flux Networks user
 	 * @return Flux user object, never null
 	 */
 	public @NotNull FluxUser getUserLazy(final @NotNull String username) {
@@ -167,7 +179,7 @@ public final class FluxAPI {
 
 	/**
 	 * Construct a FluxUser object without making API requests (so without checking if the user exists)
-	 * @param id Flux user id
+	 * @param id Flux Networks user id
 	 * @return Flux user object, never null
 	 */
 	public FluxUser getUserLazy(final int id, final @NotNull String username, final @NotNull UUID uuid) {
@@ -185,7 +197,7 @@ public final class FluxAPI {
 	}
 
 	/**
-	 * Get Flux group by ID
+	 * Get Flux Networks group by ID
 	 * @param id Group id
 	 * @return Optional with a group if the group exists, empty optional if it doesn't
 	 */
@@ -201,8 +213,8 @@ public final class FluxAPI {
 	}
 
 	/**
-	 * Get Flux groups by name
-	 * @param name Flux groups name
+	 * Get Flux Networks groups by name
+	 * @param name Flux Networks groups name
 	 * @return List of groups with this name, empty if there are no groups with this name.
 	 */
 	@NotNull
@@ -378,7 +390,7 @@ public final class FluxAPI {
 	}
 
 	/**
-	 * Update Discord username for a Flux user associated with the provided Discord user id
+	 * Update Discord username for a Flux Networks user associated with the provided Discord user id
 	 * @param discordUserId Discord user id
 	 * @param discordUsername New Discord [username#tag]s
 	 * @see #updateDiscordUsernames(long[], String[])

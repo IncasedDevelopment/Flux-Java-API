@@ -1,14 +1,13 @@
 package com.fluxnetworks.java_api;
 
-import com.fluxnetworks.java_api.Notification.NotificationType;
-import com.fluxnetworks.java_api.exception.AlreadyHasOpenReportException;
-import com.fluxnetworks.java_api.exception.CannotReportSelfException;
-import com.fluxnetworks.java_api.exception.ReportUserBannedException;
 import com.google.common.base.Preconditions;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-
+import com.fluxnetworks.java_api.Notification.NotificationType;
+import com.fluxnetworks.java_api.exception.AlreadyHasOpenReportException;
+import com.fluxnetworks.java_api.exception.CannotReportSelfException;
+import com.fluxnetworks.java_api.exception.ReportUserBannedException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -461,7 +460,7 @@ public final class FluxUser {
 					new CustomProfileField(
 							id,
 							values.get("name").getAsString(),
-							CustomProfileFieldType.fromNamelessTypeInt(values.get("type").getAsInt()),
+							CustomProfileFieldType.fromFluxTypeInt(values.get("type").getAsInt()),
 							values.get("public").getAsBoolean(),
 							values.get("required").getAsBoolean(),
 							values.get("description").getAsString()
