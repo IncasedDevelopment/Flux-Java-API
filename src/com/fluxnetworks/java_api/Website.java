@@ -22,7 +22,7 @@ public class Website {
 	Website(@NotNull final JsonObject json) {
 		Objects.requireNonNull(json, "Provided json object is null");
 
-		this.version = json.get("nameless_version").getAsString();
+		this.version = json.get("flux_version").getAsString();
 
 		this.modules = StreamSupport.stream(json.get("modules").getAsJsonArray().spliterator(), false)
 				.map(JsonElement::getAsString)
