@@ -1,0 +1,16 @@
+# .github/workflows/main.yml
+
+on:
+  schedule:
+  - cron: '0 12 * * *' # every day at noon
+
+jobs:
+  single-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: bcanseco/github-contribution-graph-action@v2
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GIT_EMAIL: incaseddevelopment@gmail.com
