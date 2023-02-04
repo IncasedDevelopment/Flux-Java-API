@@ -1,11 +1,9 @@
 # .github/workflows/main.yml
 
-on:
-  schedule:
-  - cron: '0 12 * * *' # every day at noon
+on: push
 
 jobs:
-  single-commit:
+  backfill-commits:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -14,3 +12,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GIT_EMAIL: incaseddevelopment@gmail.com
+        MAX_DAYS: 365
+        MIN_COMMITS_PER_DAY: 1
+        MAX_COMMITS_PER_DAY: 12
