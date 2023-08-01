@@ -50,7 +50,7 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>31.1-jre</version> <!-- Same version that's included in Bukkit -->
+			<version>32.1.2-jre</version> <!-- Same version that's included in Bukkit -->
 		</dependency>
 
 		<dependency>
